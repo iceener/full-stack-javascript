@@ -1,0 +1,24 @@
+{
+  "name": "01-full-stack-in-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "nodemon": "^1.14.1",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0"
+  },
+  "description": ""
+}

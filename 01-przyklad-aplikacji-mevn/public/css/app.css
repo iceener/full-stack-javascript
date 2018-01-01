@@ -1,0 +1,11 @@
+body { background: #222; color: #fff; }
+.form-control { background: #333; color: #fff; }
+.empty { text-align: center; opacity: .5; margin: 20px 0; }
+
+/* comments */
+.comments { margin: 10px 0; }
+.comment { background: #333; padding: 5px 15px; margin: 10px 0; border-radius: 3px; }
+.comment__date { opacity: .5; font-size: .75rem; }
+
+/* new comment */
+.new-comment { text-align: right; }

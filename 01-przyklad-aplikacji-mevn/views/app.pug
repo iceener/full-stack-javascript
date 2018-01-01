@@ -1,0 +1,31 @@
+html
+    head
+        title "Full Stack - in Practice"
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/css/app.css")
+    body
+        .container
+            div.app
+
+                br
+                h1 Comments
+                div(class="empty" v-if="!comments.length") There are no comments.
+                comments(v-if="comments.length", :comments="comments")
+
+                br
+                h2 Add comment
+
+                form(name="comment" class="new-comment")
+                    div.form--group
+                        input.form-control(v-model="newComment.name" name="name" placeholder="Nickname")
+                    br
+                    div.form--group
+                        textarea.form-control(v-model="newComment.content" name="content" placeholder="Text here...")
+                    br
+                    div.new-comment__actions
+                        button.btn.btn-warning(@click.prevent="addComment", :disabled="!newComment.name || !newComment.content") Add comment
+
+
+    script(src="https://unpkg.com/vue")
+    script(src="https://unpkg.com/axios/dist/axios.min.js")
+    script(src="/app.dist.js")
